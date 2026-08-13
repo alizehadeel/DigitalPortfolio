@@ -17,8 +17,8 @@ export default function Projects() {
         "Achieved 100% faithfulness and 96% citation accuracy on a 50-question hand-labeled evaluation set."
       ],
       github: "https://github.com/alizehadeel/rag-codebase-qa",
-      demo: "https://digital-cv-two.vercel.app",
-      showDemo: false
+      demo: "https://drive.google.com/file/d/1J93CBVTRMDsan7Q492wyvjig1DLmWl6Z/view?usp=sharing",
+      showDemo: true
     },
     {
       title: "Debate Arena (LangGraph)",
@@ -30,7 +30,7 @@ export default function Projects() {
         "Engineered conversation state management and automated scoring pipelines.",
         "Monitored debate latency, reliability failures, and argument quality analytics."
       ],
-      github: "https://github.com/alizehadeel/debate-arena",
+      github: "https://github.com/alizehadeel/DebateArena",
       demo: "https://digital-cv-two.vercel.app",
       showDemo: false
     },
