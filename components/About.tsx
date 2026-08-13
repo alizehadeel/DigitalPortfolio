@@ -69,21 +69,21 @@ export default function About() {
               variants={itemVariants}
               className="text-base sm:text-lg text-gray-300 leading-relaxed"
             >
-              I am a passionate computer science student and aspiring Machine Learning Engineer. I specialize in developing end-to-end ML/DL pipelines, including advanced object detection (YOLOv8) models and modern Generative AI systems powered by **Retrieval-Augmented Generation (RAG)** and **LangGraph agentic architectures**.
+              I am a passionate computer science student and aspiring Machine Learning Engineer. I specialize in developing end-to-end ML/DL pipelines, including advanced object detection (YOLOv8) models and modern Generative AI systems powered by Retrieval-Augmented Generation (RAG) and LangGraph agentic architectures.
             </motion.p>
 
             <motion.p
               variants={itemVariants}
               className="text-base sm:text-lg text-gray-400 leading-relaxed"
             >
-              With practical experience as an AI/ML Intern at **Devsinc**, I have worked across the entire machine learning life cycle, from exploratory data analysis and custom deep learning network design to building production-ready autonomous agentic flows.
+              With practical experience as an AI/ML Intern at Devsinc, I have worked across the entire machine learning life cycle, from exploratory data analysis and custom deep learning network design to building production-ready autonomous agentic flows.
             </motion.p>
 
             <motion.p
               variants={itemVariants}
               className="text-base sm:text-lg text-gray-400 leading-relaxed"
             >
-              My academic foundation at **FAST NUCES Lahore** combined with certifications in AWS Cloud Foundations and Agentic AI Workshops enables me to design, build, and deploy robust, scalable systems that blend state-of-the-art AI research with practical application.
+              My academic foundation at FAST NUCES Lahore combined with certifications in AWS Cloud Foundations and Agentic AI Workshops enables me to design, build, and deploy robust, scalable systems that blend state-of-the-art AI research with practical application.
             </motion.p>
 
             {/* Credentials Row */}
@@ -120,7 +120,7 @@ export default function About() {
             <h3 className="text-xl font-heading font-semibold text-white mb-4 lg:mt-2">
               Core Specializations
             </h3>
-            
+
             <div className="space-y-4">
               {differentiators.map((diff, index) => (
                 <motion.div

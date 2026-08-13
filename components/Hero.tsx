@@ -62,7 +62,7 @@ export default function Hero() {
           >
             <motion.div variants={itemVariants} className="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-full text-indigo-400 text-xs font-semibold tracking-wider uppercase mb-6 w-fit">
               <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
-              Available for Internships & Opportunities
+              Available for Internships & Part-time Work
             </motion.div>
 
             <motion.h1
@@ -83,7 +83,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-base sm:text-lg text-gray-400 mb-8 max-w-xl leading-relaxed"
             >
-              Building end-to-end ML/DL pipelines and sophisticated GenAI systems using RAG and LangGraph agentic workflows. Bridging deep learning research with production-grade full-stack solutions.
+              Designing and implementing end-to-end ML/DL pipelines and GenAI systems, with proven expertise in RAG patterns, LangGraph state management, and multi-agent orchestration.
             </motion.p>
 
             {/* Call to Actions */}
@@ -98,7 +98,7 @@ export default function Hero() {
                 View Work
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
-              
+
               <button
                 onClick={() => handleScrollTo("contact")}
                 className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gray-900 border border-gray-800 hover:border-gray-700 text-gray-200 font-semibold hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
@@ -155,7 +155,7 @@ export default function Hero() {
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               {/* Outer rotating/pulsing ring */}
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 rounded-full blur-xl opacity-40 animate-pulse-slow pointer-events-none" />
-              
+
               {/* Floating inner border frame */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-500 to-cyan-400 p-[3px] animate-float">
                 {/* Image container */}

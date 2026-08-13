@@ -17,7 +17,8 @@ export default function Projects() {
         "Achieved 100% faithfulness and 96% citation accuracy on a 50-question hand-labeled evaluation set."
       ],
       github: "https://github.com/alizehadeel/rag-codebase-qa",
-      demo: "https://digital-cv-two.vercel.app"
+      demo: "https://digital-cv-two.vercel.app",
+      showDemo: false
     },
     {
       title: "Debate Arena (LangGraph)",
@@ -30,7 +31,8 @@ export default function Projects() {
         "Monitored debate latency, reliability failures, and argument quality analytics."
       ],
       github: "https://github.com/alizehadeel/debate-arena",
-      demo: "https://digital-cv-two.vercel.app"
+      demo: "https://digital-cv-two.vercel.app",
+      showDemo: false
     },
     {
       title: "OwrPlan (Scheduling Application)",
@@ -42,8 +44,9 @@ export default function Projects() {
         "Implemented an intelligent best-time suggestion algorithm based on customizable schedules.",
         "Designed interactive schedule visualizations and shared expense tracking systems."
       ],
-      github: "https://github.com/alizehadeel/owrplan",
-      demo: "https://digital-cv-two.vercel.app"
+      github: "https://github.com/abijanu101/owr-plan",
+      demo: "https://drive.google.com/file/d/1cAEOWVPVXu66aez9NK-HAoUh8MNLpWMf/view?usp=sharing",
+      showDemo: true
     },
     {
       title: "Emotional Intelligence Assistant",
@@ -55,8 +58,9 @@ export default function Projects() {
         "Integrated lifestyle stress factor assessment model.",
         "Implemented an AI-powered conversational chatbot trained on empathetic dialogue datasets."
       ],
-      github: "https://github.com/alizehadeel/emotional-intelligence-assistant",
-      demo: "https://digital-cv-two.vercel.app"
+      github: "https://github.com/ansamubasher/Emotional-AI-Assistant",
+      demo: "https://drive.google.com/file/d/1YmC1BUlyPggbYdPmsftMDx3Siwl8kRlR/view",
+      showDemo: true
     },
     {
       title: "AI Recipe Generator (MLOps Project)",
@@ -68,8 +72,9 @@ export default function Projects() {
         "Integrated DVC for data versioning and MLflow for hyperparameter experiment tracking.",
         "Implemented real-time image uploads for instant ingredient detection and recipe creation."
       ],
-      github: "https://github.com/alizehadeel/ai-recipe-generator",
-      demo: "https://digital-cv-two.vercel.app"
+      github: "https://github.com/ArmishRao/RecipeGenerator",
+      demo: "https://digital-cv-two.vercel.app",
+      showDemo: false
     }
   ];
 
@@ -117,7 +122,7 @@ export default function Projects() {
                 <h3 className="text-lg font-heading font-bold text-white mb-2 leading-snug group-hover:text-indigo-400 transition-colors">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-sm text-gray-400 mb-5 leading-relaxed">
                   {project.desc}
                 </p>
@@ -148,7 +153,7 @@ export default function Projects() {
                 </div>
 
                 {/* Actions */}
-                <div className="flex items-center justify-between border-t border-gray-800/80 pt-4">
+                <div className={`flex items-center border-t border-gray-800/80 pt-4 ${project.showDemo ? "justify-between" : "justify-start"}`}>
                   <a
                     href={project.github}
                     target="_blank"
@@ -158,16 +163,18 @@ export default function Projects() {
                     <Github className="w-4 h-4" />
                     Codebase
                   </a>
-                  
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
-                  </a>
+
+                  {project.showDemo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
